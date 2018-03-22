@@ -1,0 +1,100 @@
+// BOOK ITEM
+.book-item {
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #EEE;
+  h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .price-item {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
+  }
+  img {
+    border: 1px solid #EEE;
+    padding: 3px;
+  }
+  &:last-child {
+    border-bottom: none;
+  } 
+}
+
+// BOOK SHOW
+.book-show {
+  padding: 20px 0 10px 0;
+  h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    object-position: 50% 50%;
+    object-fit: cover;
+    border: 1px solid #EEE;
+    padding: 3px;
+  }
+  .price {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .date {
+    font-size: 1rem;
+  }
+}
+
+.book-show-comments {
+  width: 50%;
+  h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
+  }
+  .comment-item {
+    background-color: #e8e8e8;
+    padding: 15px;
+    margin-bottom: 10px;
+    h2 {
+      font-family: 'Inconsolata', monospace;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// ANIMATIONS
+.load-appear {
+  opacity: 0.01;
+}
+
+.load-appear.load-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+@media screen and (max-width: @screen-sm-min) {
+  .book-show-comments {
+    width: 100%;
+  }
+}
